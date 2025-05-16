@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Details Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="FormNest">
+    <h2> &#127891 Student Details Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="fullName">Full Name:<span class="required">*</span></label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your FullName" required />
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:<span class="required">*</span></label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:<span class="required">*</span></label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected>Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email ID:<span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="Email ID" required />
+      </div>
+
+     <div class="form-group">
+        <label for="phone">Phone Number:<span class="required">*</span></label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]" maxlength="10" required />
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address:<span class="required">*</span></label>
+        <textarea id="address" name="address" rows="2" placeholder="Enter your Address" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="course">Course:<span class="required">*</span></label>
+        <select id="course" name="course" required>
+        <option value="">-- Choose a course --</option>
+        <option value="btech">B.Tech (Bachelor of Technology)</option>
+        <option value="bca">BCA (Bachelor of Computer Applications)</option>
+        <option value="bsc">B.Sc (Bachelor of Science)</option>
+        <option value="bcom">B.Com (Bachelor of Commerce)</option>
+        <option value="ba">BA (Bachelor of Arts)</option>
+        <option value="mtech">M.Tech (Master of Technology)</option>
+        <option value="mca">MCA (Master of Computer Applications)</option>
+        <option value="msc">M.Sc (Master of Science)</option>
+        <option value="mba">MBA (Master of Business Administration)</option>
+        <option value="phd">Ph.D (Doctor of Philosophy)</option>
+        </select>
+        
+      </div>
+
+      <div class="form-group">
+        <label for="year">Year:<span class="required">*</span></label>
+        <select id="year" name="year" required>
+        <option value="">--Education level--</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+        <option value="5">5th Year</option>
+  </select>
+
+      </div>
+
+      <div class="form-group">
+        <label for="studentId">Student ID:<span class="required">*</span></label>
+        <input type="text" id="studentId" name="studentId" placeholder="ID" required />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
