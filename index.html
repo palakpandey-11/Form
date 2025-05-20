@@ -16,10 +16,24 @@
         <input type="password" id="password" placeholder="Password" required />
         <button type="submit">Login</button>
         <p id="loginMessage"></p>
+        <p id="forgot" style="display: none;">
+        <a href="#" onclick="showReset()">Forgot Password?</a>
+        </p>
       </form>
     </div>
   </div>
-
+ <div id="resetForm" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeReset()">&times;</span>
+    <h3>Reset Password</h3>
+     <form>
+    <input type="password" id="newPassword" placeholder="New Password" />
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+     <button type="submit" onclick="resetPassword()">RESET</button>
+    </form>
+  </div>
+</div>
+  
   <div id="maincontent" class="hidden" style="display:none"></div>
   <div class="FormNest">
     <h2> &#127891 Student Details Form</h2>
