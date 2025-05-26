@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color:#050A30;
+   background-image:url("https://m.media-amazon.com/images/I/41XEAMezA4L._UXNaN_FMjpg_QL85_.jpg");
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,13 +16,13 @@ body {
 }
 
 .FormNest {
-  background-color: #81cce8;
+  background-color: white;
   padding: 30px;
   border: 1px solid #ccc;
   border-radius: 10px;
   width: 100%;
   max-width: 500px;
-  box-shadow: 5px 5px 25px #7EC8E3 ;
+  /* box-shadow: 2px 2px 10px #7EC8E3 ; */
 }
 
 .FormNest h2 {
@@ -36,7 +37,7 @@ body {
   justify-content: center;
   gap: 10px;
   margin-bottom: 15px;
-  box-shadow: 1px 1px 5px black;
+  /* box-shadow: 1px 1px 5px black; */
   border-radius: 5px;
 }
 
@@ -98,7 +99,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  z-index: 11;
+  z-index: 15;
   animation: logoFade 3s forwards;
 }
 
@@ -152,14 +153,30 @@ button:hover {
   box-shadow: 1px 1px 5px rgb(55, 53, 53);
 }
 
+#msg {
+  margin-top:10px;
+}
+
 .login-box button {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   background: royalblue;
   color: white;
   border: none;
   cursor: pointer;
   box-shadow: 1px 1px 5px black;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px; 
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button-row button {
+  padding: 10px 20px;
+  font-size: 16px;
 }
 
 #loginMessage {
@@ -212,7 +229,7 @@ button:hover {
 }
 
 .modal-content button{
-  width: 30%;
+  width: 40%;
   padding: 10px;
   background: royalblue;
   color: white;
@@ -229,4 +246,81 @@ button:hover {
   margin:10px 0;
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgb(55, 53, 53);
+}
+
+.newUserPanel {
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  background-color: #f5f7f8;
+}
+
+.newUserPanel h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #161515;
+}
+
+.form-group2 input{
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #aaa; 
+   border-radius: 5px;
+}
+
+.newUserPanel button{
+  width: 100%;
+  padding: 12px;
+  background-color: #5b86e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-group2 label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+} 
+.form-group2 {
+  margin-bottom: 20px;
+}
+
+.newUserPanel button:hover{
+  background-color: rgb(15, 39, 110);
+}
+ .entryGate {
+position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image:url("https://m.media-amazon.com/images/I/41XEAMezA4L._UXNaN_FMjpg_QL85_.jpg");
+  background-size: cover;
+  display: flex;
+   justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index:11;
+ } 
+
+ .newUserPanel p,
+.newUserPanel a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .newUserPanel {
+    padding: 20px;
+  }
 }

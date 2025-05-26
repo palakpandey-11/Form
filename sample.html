@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg Form</title>
+    <style>
+       
+       #maincontent {
+        min-height:100vh;
+        /* overflow-y: auto; */
+        border:1px solid black;
+        background-image:url("https://m.media-amazon.com/images/I/41XEAMezA4L._UXNaN_FMjpg_QL85_.jpg");
+        background-size: cover;
+       }
+
+      .head {
+        height:150px;
+        width:100%;
+        /* border-radius: 4px;
+        border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .clg{
+        width:200px;
+      }
+
+      .add{
+        width:200px;
+        /* position:relative; */
+        margin-left:auto;
+        text-align:right;
+      }
+
+      .hole-box {
+        display:flex;
+        justify-content: center;
+      } 
+
+      .basic {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* background-color: rgb(243, 235, 235); */
+        background-image: url("https://t4.ftcdn.net/jpg/03/22/63/91/360_F_322639135_8stIcJcX4X84m56tV5wNnDmhFd6ZIYRG.jpg");
+        background-size:100px 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* border:1px solid black; */
+        box-shadow:2px 2px 4px black;
+        border-radius:5px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+        height:200px;
+        width:200px;
+        transition: transform 0.3s ease;
+      }
+
+      .basic:hover{
+        transform: translateY(-5px);
+      }
+
+      .basic h2{
+        margin-top:170px;
+      }
+      
+      #bt {
+        margin-left:auto;
+        border:none;
+        font-size:20px;
+        /* background-color: rgb(243, 235, 235); */
+      }
+
+      /* #bt:hover {
+        background-color: rgb(232, 225, 225);
+      } */
+      
+     .form-group {
+        width:100%;
+        margin-bottom:20px;
+
+     }
+
+      .form-group label {
+        display: block;
+        margin-bottom:7px;
+      }
+
+      .form-group input {
+        border: 1px solid black;
+        border-radius: 4px;
+        height:25px;
+      }
+
+      .id {
+        display: flex;
+      }
+
+    .academic {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* background-color: rgb(243, 235, 235); */
+        background-image: url("https://t3.ftcdn.net/jpg/02/31/29/24/240_F_231292483_x9lqXIOCDlOCY8pG3IJQNOHFUuaK6r8t.jpg");
+        background-size:100px 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow:2px 2px 4px black;
+        border-radius:5px;
+        color: rgb(20, 18, 18);
+        margin-left: 20px;
+        height: 200px;
+        width: 200px;
+         transition: transform 0.3s ease;
+      }
+
+      .academic:hover{
+        transform: translateY(-5px);
+      }
+
+      .academic h2{
+        margin-top:170px;
+      }
+
+       #bt2 {
+        margin-left:auto;
+        border:none;
+        font-size:20px;
+        /* background-color: rgb(243, 235, 235); */
+      }
+
+      /* #bt2:hover {
+        background-color: rgb(232, 225, 225);
+      } */
+
+      .form-group2 {
+        width:100%;
+        margin-bottom:20px;
+
+     }
+
+     .form-group2 label {
+        display: block;
+        margin-bottom:7px;
+      }
+
+      .form-group2 input {
+        border: 1px solid black;
+        border-radius: 4px;
+        height:25px;
+
+      }
+     
+      .checkbox-group label {
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
+      }
+
+      .details {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* background-color: rgb(243, 235, 235); */
+        background-image: url("https://t4.ftcdn.net/jpg/12/36/98/43/240_F_1236984387_SpQ3XvxPAJof6MtQ7kLkDbAipmdqgYGV.jpg");
+        background-size:100px 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow:2px 2px 4px black;
+        border-radius:5px;
+        color: rgb(1, 1, 1);
+        margin-left: 20px;
+        height:200px;
+        width:200px;
+         transition: transform 0.3s ease;
+      }
+ 
+      .details:hover{
+        transform: translateY(-5px);
+      }
+
+      .details h2{
+        margin-top:190px;
+      }
+
+       #bt3 {
+        margin-left:auto;
+        border:none;
+        font-size:20px;
+        /* background-color: rgb(243, 235, 235); */
+      }
+
+      /* #bt3:hover {
+        background-color: rgb(232, 225, 225);
+      } */
+
+      .hole-box2{
+        display:flex;
+        justify-content: center;
+        
+      }
+
+      .basic2 {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* background-color: rgb(243, 235, 235); */
+        background-image: url("https://t3.ftcdn.net/jpg/00/65/77/34/240_F_65773487_wDUWQVCMxVmZUpOE8yaowzleunUZo0ea.jpg");
+        background-size:150px 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow:2px 2px 4px black;
+        border-radius:5px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+        height:200px;
+        width:200px;
+        transition: transform 0.3s ease;
+      }
+
+      .basic2:hover{
+        transform: translateY(-5px);
+      }
+
+      .basic2 h2{
+        margin-top:190px;
+      }
+    
+      .academic2 {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* background-color: rgb(243, 235, 235); */
+        background-image: url("https://t3.ftcdn.net/jpg/11/64/14/86/240_F_1164148625_Prb7YXNCI3thWZTh6SWNm48po8KnJGnw.jpg");
+         background-size:150px 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow:2px 2px 4px black;
+        border-radius:5px;
+        color: rgb(20, 18, 18);
+        margin-left:20px;
+        height: 200px;
+        width: 200px;
+         transition: transform 0.3s ease;
+      }
+
+      .academic2:hover{
+        transform: translateY(-5px);
+      }
+
+      .academic2 h2 {
+        margin-top:190px;
+      }
+
+      .details2 {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* background-color: rgb(243, 235, 235); */
+        background-image: url("https://t3.ftcdn.net/jpg/11/83/16/66/240_F_1183166699_tY3PLZ12wHPZuVqDSkvv1TfuvEqt4dRs.jpg");
+         background-size:150px 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow:2px 2px 4px black;
+        border-radius:5px;
+        color: rgb(1, 1, 1);
+        margin-left:20px;
+        height:200px;
+        width:200px;
+         transition: transform 0.3s ease;
+      }
+
+      .details2:hover{
+        transform: translateY(-5px);
+      }
+
+      .details2 h2{
+        margin-top:190px;
+      }
+
+      .hole-box3{
+        display:flex;
+        justify-content: center;
+        
+      }
+
+      .basic3 {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* background-color: rgb(243, 235, 235); */
+        background-image: url("https://t4.ftcdn.net/jpg/02/79/71/53/240_F_279715323_QigN3hhtwGWO71Sk2D0uJTuAfm5FhK1x.jpg");
+         background-size:150px 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow:2px 2px 4px black;
+        border-radius:5px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+        height:200px;
+        width:200px;
+         transition: transform 0.3s ease;
+      }
+    
+      .basic3:hover{
+        transform: translateY(-5px);
+      }
+
+      .basic3 h2{
+        margin-top:190px;
+      }
+
+      .academic3 {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* background-color: rgb(243, 235, 235); */
+        background-image: url("https://t4.ftcdn.net/jpg/02/39/06/85/240_F_239068579_8FQK3K7Bs9235z7pP96nZCkkOR5nB5g9.jpg");
+        background-size:150px 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow:2px 2px 4px black;
+        border-radius:5px;
+        color: rgb(20, 18, 18);
+        margin-left:20px;
+        height: 200px;
+        width: 200px;
+         transition: transform 0.3s ease;
+      }
+
+      .academic3:hover{
+        transform: translateY(-5px);
+      }
+
+      .academic3 h2{
+        margin-top:190px;
+      }
+
+
+      .details3 {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* background-color: rgb(243, 235, 235); */
+        background-image: url("https://t4.ftcdn.net/jpg/05/28/02/27/240_F_528022790_eSEotvvyzZluuGg1XqlsatQK3SUrCvr7.jpg");
+         background-size:150px 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow:2px 2px 4px black;
+        border-radius:5px;
+        color: rgb(1, 1, 1);
+        margin-left:20px;
+        height:200px;
+        width:200px;
+         transition: transform 0.3s ease;
+      }
+
+      .details3:hover{
+        transform: translateY(-5px);
+      }
+      
+      .details3 h2{
+        margin-top:190px;
+      }
+
+       .hole-box4{
+        display:flex;
+        justify-content: center;
+        
+      }
+
+       .basic4 {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* background-color: rgb(243, 235, 235); */
+        background-image: url("https://t3.ftcdn.net/jpg/00/30/80/90/240_F_30809021_jrQwUASlC2XSXCtbAy1HEGRPI26Z9Ojj.jpg" );
+        background-size:400px 80px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow:2px 2px 4px black;
+        border-radius:5px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+        height:100px;
+        width:500px;
+         transition: transform 0.3s ease;
+      }
+
+      .basic4:hover{
+        transform: translateY(-5px);
+      }
+
+      .basic4 h2{
+        margin-top:100px;
+      }
+    
+
+    </style>
+</head>
+<body>
+    <!-- <div id="maincontent" class="hidden" style="display:none"></div> -->
+     <div id="maincontent">
+    <div class="head">
+      <img src="https://t3.ftcdn.net/jpg/06/09/78/22/240_F_609782249_FyRxzIhL8FeQzEPJfHVH2mG6sfBGsbTq.jpg" style="width: 150px; height: 150px;" >
+        <div class="clg"><h3>NETAJI SUBHASH UNIVERSITY</h3></div>
+        <div class="add">NETAJI SUBHASH UNIVERSITY<br>Pokhari,Jamshedpur,Jharkhand<br>example@example.com<br>www.example.com<br>(123) 1234567</div>
+    </div><hr>
+  <!-- basic information    -->
+
+   <div class="hole-box" id="registrationDetails">
+    <div id="okay">
+    <div class="basic">
+        <h2>Basic Information</h2>
+        <button id="bt" type="submit">&#9662;</button>
+    </div>
+
+    <div class="personal" id="formSection" style="display: none; height:70vh;">
+        <form id="studentForm">
+        <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" style="margin-right:10px;" id="fullName1" placeholder="First Name" required/>
+        <input type="text" style="margin-right:10px;" id="fullName2" placeholder="Middle Name"/>
+        <input type="text" id="fullName3" placeholder="Last Name" required/>
+      </div>
+        
+      <div class="id">
+        <div class="form-group">
+        <label for="num">Student Number</label>
+        <input type="tel" id="num" name="num" placeholder="e.g. 11183021" required/>
+        </div>
+        <div class="form-group"  style="margin-left:auto;" >
+        <label for="year">Year</label>
+        <select id="year" style=" border: 1px solid black;  border-radius: 4px; height:25px;" required>
+        <option value="" disabled selected>Please Select</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+        <option value="5">5th Year</option>
+  </select>
+      </div>
+      </div>
+      
+
+      <div class="id">
+      <div class="form-group">
+        <label for="course">Course</label>
+        <select id="course" style=" border: 1px solid black;  border-radius: 4px; height:25px;" required>
+        <option value="" disabled selected>Please Select</option>
+        <option value="btech">B.Tech (Bachelor of Technology)</option>
+        <option value="bca">BCA (Bachelor of Computer Applications)</option>
+        <option value="bsc">B.Sc (Bachelor of Science)</option>
+        <option value="bcom">B.Com (Bachelor of Commerce)</option>
+        <option value="ba">BA (Bachelor of Arts)</option>
+        <option value="mtech">M.Tech (Master of Technology)</option>
+        <option value="mca">MCA (Master of Computer Applications)</option>
+        <option value="msc">M.Sc (Master of Science)</option>
+        <option value="mba">MBA (Master of Business Administration)</option>
+        <option value="phd">Ph.D (Doctor of Philosophy)</option>
+        </select>
+        </div>
+        <div class="form-group"  style="margin-left:auto;" >
+        <label for="email">Email ID</label>
+        <input type="email" id="email" placeholder="Email ID" required />
+      </div>
+       </div>
+
+        <div class="id">
+      <div class="form-group">
+        <label for="phone" style="margin:0; padding:0">Phone Number</label>
+        <input type="tel" id="phone" maxlength="10" placeholder="+91" required />
+        </div>
+        <div class="form-group"  style="margin-left:auto;" >
+         <label for="dob" style="margin:0; padding:0;">Date of Birth</label>
+        <input type="date" id="dob" required />
+      </div>
+      </div>
+    
+      <div class="id">
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" placeholder="City" required>
+        </div>
+        <div class="form-group" style="margin-left:auto;">
+        <label for="state">State</label>
+        <input type="text" id="state" placeholder="State" required>
+      </div>
+      </div>
+
+     <div class="form-group">
+        <label for="address">Present Address</label>
+        <textarea id="address" rows="2" cols="50" placeholder="Enter your Address" required></textarea>
+      </div>
+
+      <button type="submit" style="display:flex; margin-left:auto;">Submit</button>
+</form>
+    </div>
+    </div>
+
+ <!-- academic background    -->
+     <div id="okay2">
+     <div class="academic">
+        <h2>Academic Background</h2>
+        <button id="bt2" type="submit">&#9662;</button>
+    </div>
+
+    <div class="personal2" id="formSection2" style="display: none;">
+        <form id="studentForm2">
+        <div class="form-group2">
+        <label for="schoolName">High School Name</label>
+        <input type="text" style="margin-right:10px;" id="schoolName" name="schoolName" placeholder="High School Name" required/>
+        </div>
+
+        <div class="form-group2">
+        <label for="uploadFile">Curriculum Vitae or list of Achievements</label>
+        <input type="file" id="upload" name="uploadFile" accept="image/*, .pdf, .doc, .docx" style="height: 100px; width: 300px;" required/>
+        <img id="preview" style="max-width: 150px; margin-top: 10px; display: none;">
+        <!-- <p>File should be in .jpg, .png pdf,doc/docx format.</p> -->
+        </div>
+
+        <div class="form-group2">
+           <label for="activities" >Extra Curricular Participation</label>
+            <div class="checkbox-group">
+            <label><input type="checkbox" name="skills" value="HTML" id="activities"> HTML</label>
+            <label><input type="checkbox" name="skills" value="CSS" id="activities"> CSS</label>
+            <label><input type="checkbox" name="skills" value="JavaScript" id="activities"> JavaScript</label>
+            <label><input type="checkbox" name="skills" value="Python" id="activities"> Python</label>
+        </div>
+        </div>
+        <button type="submit" style="display:flex; margin-left:auto;">Submit</button>
+        </form>
+        </div>
+        </div>
+
+<!-- other details -->
+       <div id="okay3">
+       <div class="details">
+        <h2>Other Details</h2>
+        <button id="bt3" type="submit">&#9662;</button>
+    </div>
+     
+          <div class="personal3" id="formSection3" style="display: none;">
+           <form id="studentForm3">
+           <div class="id">
+           <div class="form-group">
+           <label for="game">Sports</label>
+           <div class="checkbox-group">
+            <label><input type="checkbox" name="game" value="Cricket">Cricket</label>
+            <label><input type="checkbox" name="game" value="football">FootBall</label>
+            <label><input type="checkbox" name="game" value="Valleyball" >ValleyBall</label>
+            <label><input type="checkbox" name="game" value="Badminton" >Badminton</label>
+            <label><input type="checkbox" name="game" value="Tennis">Tennis</label>
+            </div>
+            </div>
+        
+           <div class="form-group">
+           <label for="hobbies">Hobbies</label>
+           <div class="checkbox-group">
+            <label><input type="checkbox" name="hobbies" value="Dancing" >Dancing</label>
+            <label><input type="checkbox" name="hobbies" value="Gaming" >Gaming</label>
+            <label><input type="checkbox" name="hobbies" value="Singing" >Singing</label>
+            <label><input type="checkbox" name="hobbies" value="Reading" >Reading</label>
+            <label><input type="checkbox" name="hobbies" value="Coding" >Coding</label>
+        </div>
+        </div>
+        </div>
+        <button type="submit" style="display:flex; margin-left:auto;">Submit</button>
+        </form>
+    </div> 
+    </div>
+       
+       
+</div>
+
+<div class="hole-box2"  id="formSection4" style="display:none;">
+    <div class="basic2">
+        <h2>About Us</h2>
+      </div>
+ <!-- academic background    -->
+
+     <div class="academic2">
+        <h2>Course Offered</h2>
+      </div>
+
+<!-- other details -->
+
+       <div class="details2">
+        <h2>Placement</h2></div>
+</div>
+
+<div class="hole-box3 " id="formSection5" style="display:none;">
+    <div class="basic3">
+        <h2>Admission</h2>
+      </div>
+ <!-- academic background    -->
+
+     <div class="academic3">
+        <h2>Faculty</h2>
+      </div>
+
+<!-- other details -->
+
+       <div class="details3">
+        <h2>Notice</h2></div>
+</div>
+
+<div class="hole-box4" id="formSection6" style="display:none;">
+  <div class="basic4">
+    <h2>Know your details</h2>
+  </div>
+</div>
+
+<!-- script tag -->
+  <script>
+       
+       let isStudentFormSubmitted = false;
+       let isStudentForm2Submitted = false;
+       let isStudentForm3Submitted = false;
+  
+
+    const formSection4 = document.getElementById('formSection4');
+const formSection5 = document.getElementById('formSection5');
+
+// basic details logic
+
+    const studentForm = document.getElementById('studentForm');
+  studentForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+
+     const firstName = document.getElementById('fullName1').value;
+    const middleName = document.getElementById('fullName2').value;
+    const lastName = document.getElementById('fullName3').value;
+    const num = document.getElementById('num').value;
+    const year = document.getElementById('year').value;
+    const course = document.getElementById('course').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const dob = document.getElementById('dob').value;
+    const city = document.getElementById('city').value;
+    const state = document.getElementById('state').value;
+    const address = document.getElementById('address').value;
+    // console.log("Full Name:", firstName,middleName,lastName ,"|Student Number:",num ,"|Year:",year, "|Course:",course ,"| Email:", email, "|Phone Number:",phone ,"|Date of Birth:",dob, "|City:",city, "|State:",state, "|Address:",address);
+    const basicDetails = {
+  firstName,
+  middleName,
+  lastName,
+  num,
+  year,
+  course,
+  email,
+  phone,
+  dob,
+  city,
+  state,
+  address
+};
+localStorage.setItem('basicDetails', JSON.stringify(basicDetails));
+    
+    
+    formSection.style.display = "none";
+    okay2.style.display = 'block';
+    okay3.style.display = 'block';
+    isStudentFormSubmitted = true;
+    studentForm.reset();
+  });
+
+    const toggleBtn = document.getElementById('bt');
+  const formSection = document.getElementById('formSection');
+
+  toggleBtn.addEventListener('click', () => {
+    if (formSection.style.display === 'none') {
+      formSection.style.display = 'block';
+      okay2.style.display = 'none';
+      okay3.style.display = 'none';
+      toggleBtn.innerHTML = '&#9652;'; // ▲ up arrow
+    } else {
+      formSection.style.display = 'none';
+      okay2.style.display = 'block';
+      okay3.style.display = 'block';
+      toggleBtn.innerHTML = '&#9662;'; // ▼ down arrow
+    }
+
+  });
+
+
+
+// academic details logic
+
+  const toggleBtn2 = document.getElementById('bt2');
+  const formSection2 = document.getElementById('formSection2');
+
+
+toggleBtn2.addEventListener('click', () => {
+    if (formSection2.style.display === 'none') {
+      formSection2.style.display = 'block';
+      okay.style.display = 'none';
+      okay3.style.display = 'none';
+      toggleBtn2.innerHTML = '&#9652;'; // ▲ up arrow
+    } else {
+      formSection2.style.display = 'none';
+      okay.style.display = 'block';
+      okay3.style.display = 'block';
+      toggleBtn2.innerHTML = '&#9662;'; // ▼ down arrow
+    }
+
+  });
+
+  const studentForm2 = document.getElementById('studentForm2');
+   studentForm2.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+ const schoolName = document.getElementById('schoolName').value;
+ const upload = document.getElementById('upload');
+ const file = upload.files[0];
+
+ const checkedSkills = [];
+  document.querySelectorAll('input[name="skills"]:checked').forEach((checkbox) => {
+    checkedSkills.push(checkbox.value);
+  });
+
+  const academicDetails = {
+    schoolName: schoolName,
+    fileName: file ? file.name : null,
+    skills: checkedSkills
+  };
+
+  localStorage.setItem('academicDetails', JSON.stringify(academicDetails));
+
+
+console.log("Academic Info Submitted:");
+  console.log("High School Name:", schoolName);
+
+if (file) {
+  console.log("File name:", file.name);
+  console.log("File type:", file.type);
+  console.log("File size:", file.size, "bytes");
+}
+else {
+    console.log("No file selected.");
+  }
+// const checkedSkills = [];
+//   document.querySelectorAll('input[name="skills"]:checked').forEach((checkbox) => {
+//     checkedSkills.push(checkbox.value);
+//   });
+
+  console.log("Selected Skills:", checkedSkills);
+
+  formSection2.style.display = "none";
+    okay.style.display = 'block';
+    okay3.style.display = 'block';
+    isStudentForm2Submitted = true;
+
+
+  studentForm2.reset();
+   });
+
+  // other details
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn3 = document.getElementById('bt3');
+  const formSection3 = document.getElementById('formSection3');
+
+
+toggleBtn3.addEventListener('click', () => {
+    if (formSection3.style.display === 'none') {
+      formSection3.style.display = 'block';
+      okay.style.display = 'none';
+      okay2.style.display = 'none';
+      toggleBtn3.innerHTML = '&#9652;'; // ▲ up arrow
+    } else {
+      formSection3.style.display = 'none';
+      okay.style.display = 'block';
+      okay2.style.display = 'block';
+      toggleBtn3.innerHTML = '&#9662;'; // ▼ down arrow
+    }
+
+  });
+});
+   
+   document.addEventListener('DOMContentLoaded', function() {
+   const studentForm3 = document.getElementById('studentForm3');
+   const formSection3 = document.getElementById('formSection3');
+
+
+   if (studentForm3) {
+   studentForm3.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const checkedgames = [];
+  document.querySelectorAll('input[name="game"]:checked').forEach((checkbox) => {
+    checkedgames.push(checkbox.value);
+  });
+
+const checkedhobbies = [];
+  document.querySelectorAll('input[name="hobbies"]:checked').forEach((checkbox) => {
+    checkedhobbies.push(checkbox.value);
+  });
+
+  
+    if (!isStudentFormSubmitted || !isStudentForm2Submitted) {
+    let missingForms = [];
+    if (!isStudentFormSubmitted) missingForms.push("Basic Details form");
+    if (!isStudentForm2Submitted) missingForms.push("Academic Details form");
+
+    alert(`Please fill and submit the following form(s) first:\n\n${missingForms.join("\n")}`);
+    return;
+  }
+
+const otherDetails = {
+  games: checkedgames,
+  hobbies: checkedhobbies
+};
+
+localStorage.setItem('otherDetails', JSON.stringify(otherDetails));
+
+  // formSection4.style.display = 'flex';
+  // formSection5.style.display = 'flex';
+  isStudentForm3Submitted = true;
+  okay3.style.display = 'none';
+
+      studentForm3.reset();
+
+      formSection4.style.display = 'flex';
+      formSection5.style.display = 'flex';
+      formSection6.style.display = 'flex';
+
+
+  // window.location.href = 'details.html';
+    });
+}else {
+       console.warn('Form with ID "studentForm3" not found.');
+   }
+  });
+
+  document.getElementById('formSection6').addEventListener('click', function() {
+  window.location.href = 'details.html';
+});
+ 
+
+  </script>
+</body>
+</html>

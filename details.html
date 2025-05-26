@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Details</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      /* background-color: #f2f2f2; */
+      font-family: Arial, sans-serif;
+      background-image:url("https://m.media-amazon.com/images/I/41XEAMezA4L._UXNaN_FMjpg_QL85_.jpg");
+  background-size: cover;
+    }
+
+    .details {
+      width: 100%;
+      padding: 20px;
+      /* border: 1px solid black; */
+      border-radius: 10px;
+      /* box-shadow: 1px 1px 5px gray; */
+      /* background-color: white; */
+      text-align: left;
+      /* position: fixed; */
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    button {
+      /* display: block; */
+      /* display:;
+      margin-left:auto;
+      margin: 20px auto 0; */
+      display:flex;
+      margin-left:auto;
+      margin-top:20px;
+      padding: 10px 20px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      
+    }
+
+    button:hover {
+      background-color:red;
+    } 
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    /* background-color: rgb(240, 119, 177); */
+    box-shadow: 1px 1px 2px black;
+}
+  th, td {
+    border: 2px solid #888;
+    padding: 8px;
+    text-align: left;
+    box-shadow: 1px 1px 2px rgb(136, 129, 129);
+
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="details">
+    <h2 id="heading">🎓 Registered Entries</h2>
+    <div id="detailsContainer">
+    </div>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    // const student = JSON.parse(localStorage.getItem("studentData"));   
+    // if (student) {
+    //   document.getElementById("studentDetails").innerHTML = `
+    //     <p><strong>Full Name:</strong> ${student.fullName}</p>
+    //     <p><strong>Date of Birth:</strong> ${student.dob}</p>
+    //     <p><strong>Gender:</strong> ${student.gender}</p>
+    //     <p><strong>Email:</strong> ${student.email}</p>
+    //     <p><strong>Phone:</strong> ${student.phone}</p>
+    //     <p><strong>Address:</strong> ${student.address}</p>
+    //     <p><strong>Course:</strong> ${student.course}</p>
+    //     <p><strong>Year:</strong> ${student.year}</p>
+    //     <p><strong>Student Id:</strong> ${student.studentId}</p>
+    //   `;
+    // } else {
+    //   document.getElementById("studentDetails").innerHTML = "<p>No data found!</p>";
+    // }
+    // function logout() {
+    //   localStorage.clear();
+    //   window.location.href = "index.html"; 
+    // }
+
+    //  const studentList = JSON.parse(localStorage.getItem("student")) || [];
+
+  // const tableContainer = document.getElementById("studentDetails");
+
+
+  // const students = JSON.parse(localStorage.getItem('student') || '[]');
+  // localStorage.setItem("student", JSON.stringify(students));
+
+  //   const tbody = document.querySelector('#studentTable tbody');
+
+
+  //    if (students.length === 0) {
+  //     tbody.innerHTML = '<tr><td colspan="9">No student records found.</td></tr>';
+  //   } else {
+  //     students.forEach(student => {
+  //       const row = `<tr>
+  //         <td>${student.fullName}</td>
+  //         <td>${student.dob}</td>
+  //         <td>${student.gender}</td>
+  //         <td>${student.email}</td>
+  //         <td>${student.phone}</td>
+  //         <td>${student.address}</td>
+  //         <td>${student.course}</td>
+  //         <td>${student.year}</td>
+  //         <td>${student.studentId}</td>
+  //       </tr>`;
+  //       tbody.innerHTML += row;
+  //     });
+  //   }
+  // if (studentList.length > 0) {
+  //   let tableHTML = `
+  //     <table border="1" cellpadding="10" cellspacing="0">
+  //       <tr>
+  //         <th>Full Name</th>
+  //         <th>DOB</th>
+  //         <th>Gender</th>
+  //         <th>Email</th>
+  //         <th>Phone</th>
+  //         <th>Address</th>
+  //         <th>Course</th>
+  //         <th>Year</th>
+  //         <th>Student ID</th>
+  //       </tr>
+  //   `;
+
+  //   studentList.forEach(student => {
+  //     tableHTML += `
+  //       <tr>
+  //         <td>${student.fullName}</td>
+  //         <td>${student.dob}</td>
+  //         <td>${student.gender}</td>
+  //         <td>${student.email}</td>
+  //         <td>${student.phone}</td>
+  //         <td>${student.address}</td>
+  //         <td>${student.course}</td>
+  //         <td>${student.year}</td>
+  //         <td>${student.studentId}</td>
+  //       </tr>
+  //     `;
+  //   });
+  //   tableHTML += `</table>`;
+  //   tableContainer.innerHTML = tableHTML;
+  // } else {
+  //   tableContainer.innerHTML = "<p>No student records found!</p>";
+  // }
+
+const basic = JSON.parse(localStorage.getItem('basicDetails')) || {};
+    const academic = JSON.parse(localStorage.getItem('academicDetails')) || {};
+    const other = JSON.parse(localStorage.getItem('otherDetails')) || {};
+
+    const container = document.getElementById('detailsContainer');
+
+    const tableHTML = `
+      <table>
+        <tr><th colspan="2">Basic Details</th></tr>
+        <tr><td>Full Name</td><td>${basic.firstName || ''} ${basic.middleName || ''} ${basic.lastName || ''}</td></tr>
+        <tr><td>Student Number</td><td>${basic.num || ''}</td></tr>
+        <tr><td>Year</td><td>${basic.year || ''}</td></tr>
+        <tr><td>Course</td><td>${basic.course || ''}</td></tr>
+        <tr><td>Email</td><td>${basic.email || ''}</td></tr>
+        <tr><td>Phone</td><td>${basic.phone || ''}</td></tr>
+        <tr><td>Date of Birth</td><td>${basic.dob || ''}</td></tr>
+        <tr><td>City</td><td>${basic.city || ''}</td></tr>
+        <tr><td>State</td><td>${basic.state || ''}</td></tr>
+        <tr><td>Address</td><td>${basic.address || ''}</td></tr>
+
+        <tr><th colspan="2">Academic Details</th></tr>
+        <tr><td>School Name</td><td>${academic.schoolName || ''}</td></tr>
+        <tr><td>Uploaded File</td><td>${academic.fileName || 'Not Uploaded'}</td></tr>
+        <tr><td>Skills</td><td>${(academic.skills || []).join(', ')}</td></tr>
+
+        <tr><th colspan="2">Other Details</th></tr>
+        <tr><td>Games</td><td>${(other.games || []).join(', ')}</td></tr>
+        <tr><td>Hobbies</td><td>${(other.hobbies || []).join(', ')}</td></tr>
+      </table>
+    `;
+
+    container.innerHTML = tableHTML;
+  function logout() {
+    // localStorage.clear();
+    localStorage.removeItem("signupEmail");
+localStorage.removeItem("signupPassword");
+    window.location.href = "index.html";
+  }
+
+  </script>
+</body>
+</html>
