@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reg Form</title>
     <style>
+
+      .container {
+  display: flex;
+  justify-content: center; 
+  /* align-items: center;      */
+  min-height: 100vh;      
+  /* background-color: #f0f0f0;  */
+}
+      #maincontent {
+  /* background-color: white; */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 90%;
+}
+
        
       body {
-        display:flex;
+        /* display:flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
         background-image:url("https://m.media-amazon.com/images/I/41XEAMezA4L._UXNaN_FMjpg_QL85_.jpg");
         background-size: cover;
       }
@@ -73,10 +90,6 @@
         font-size:20px;
         /* background-color: rgb(243, 235, 235); */
       }
-
-      /* #bt:hover {
-        background-color: rgb(232, 225, 225);
-      } */
       
      .form-group {
         width:100%;
@@ -131,10 +144,6 @@
         font-size:20px;
         /* background-color: rgb(243, 235, 235); */
       }
-
-      /* #bt2:hover {
-        background-color: rgb(232, 225, 225);
-      } */
 
       .form-group2 {
         width:100%;
@@ -192,10 +201,6 @@
         font-size:20px;
         /* background-color: rgb(243, 235, 235); */
       }
-
-      /* #bt3:hover {
-        background-color: rgb(232, 225, 225);
-      } */
 
       .hole-box2{
         display:flex;
@@ -402,10 +407,10 @@
     </style>
 </head>
 <body>
-    <!-- <div id="maincontent" class="hidden" style="display:none"></div> -->
+     <div class="container">
      <div id="maincontent">
     <div class="head">
-      <img src="https://t3.ftcdn.net/jpg/06/09/78/22/240_F_609782249_FyRxzIhL8FeQzEPJfHVH2mG6sfBGsbTq.jpg" style="width: 150px; height: 170px;" >
+      <img src="https://t3.ftcdn.net/jpg/06/09/78/22/240_F_609782249_FyRxzIhL8FeQzEPJfHVH2mG6sfBGsbTq.jpg" style="width: 150px; height: 150px;" >
         <div class="clg"><h3>NETAJI SUBHASH UNIVERSITY</h3></div>
         <div class="add">NETAJI SUBHASH UNIVERSITY<br>Pokhari,Jamshedpur,Jharkhand<br>example@example.com<br>www.example.com<br>(123) 1234567</div>
     </div><hr>
@@ -613,7 +618,8 @@
     <h2>Know your details</h2>
   </div>
 </div>
-
+</div>
+</div>
 <!-- script tag -->
   <script>
        
